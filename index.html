@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equipment QR System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0;
+      font-family:Poppins, sans-serif;
+      background:linear-gradient(180deg,#f9fdff 0%, #eaf5ff 100%);
+      color:#04263a;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+    .container {
+      text-align:center;
+      padding:20px;
+    }
+    h1 {
+      margin-bottom:30px;
+      font-size:28px;
+      color:#0a3a56;
+    }
+    .btns {
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:center;
+    }
+    .card-btn {
+      background:white;
+      border-radius:16px;
+      padding:30px 40px;
+      text-decoration:none;
+      color:#0a3a56;
+      font-size:20px;
+      font-weight:700;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      transition:transform .25s, box-shadow .25s;
+      min-width:220px;
+    }
+    .card-btn:hover {
+      transform:translateY(-6px) scale(1.03);
+      box-shadow:0 18px 40px rgba(0,0,0,0.12);
+    }
+    .emoji {
+      font-size:36px;
+      display:block;
+      margin-bottom:12px;
+    }
+    @media (max-width:600px){
+      h1 { font-size:22px; }
+      .card-btn { font-size:18px; padding:20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Equipment QR Management</h1>
+    <div class="btns">
+      <a href="generator.html" class="card-btn">
+        <span class="emoji">🛠️</span>
+        QR Generator
+      </a>
+      <a href="scanner.html" class="card-btn">
+        <span class="emoji">📷</span>
+        QR Scanner
+      </a>
+    </div>
+  </div>
+</body>
+</html>
